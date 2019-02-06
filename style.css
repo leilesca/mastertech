@@ -1,0 +1,71 @@
+body{
+    margin:0;
+}
+#main{
+    display:grid;
+    grid-template-areas:" header header header"
+                        "nav nav aside"
+                        " section section aside "
+                        " footer footer footer ";
+    grid-auto-rows:15vh 15vh 55vh 15vh;
+    grid-auto-columns: 35vw 35vw 30vw;
+}
+header{
+    grid-area: header;
+    background-color: rgb(38, 211, 130);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+header a:hover{
+    font-size:25px;
+}
+nav{
+    grid-area: nav;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+}
+aside{
+    grid-area:aside;
+    background-color: yellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+}
+aside p{
+    width: 200px;
+}
+aside h2{
+    font-size:30px;
+}
+section{
+    grid-area: section;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section img{
+    width: 300px;
+    height: 300px;
+}
+footer{
+    grid-area:footer;
+    background-color: orangered;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer img{
+    width: 3vw;
